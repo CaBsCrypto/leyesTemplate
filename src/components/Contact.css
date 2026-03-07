@@ -175,6 +175,21 @@
     margin-top: 0.5rem;
 }
 
+.contact__submit:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    transform: none !important;
+}
+
+.contact__error {
+    font-size: 0.85rem;
+    color: #e07070;
+    background: rgba(220, 80, 80, 0.08);
+    border: 1px solid rgba(220, 80, 80, 0.2);
+    border-radius: 4px;
+    padding: 0.65rem 1rem;
+}
+
 /* Success */
 .contact__success {
     padding: 3rem;

@@ -1,17 +1,112 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Estudio Jurídico con enfoque humano, profesional y especializado. Abogadas Macarena Morales Gómez y Soledad Araya Molina. Familia, laboral, civil y más." />
-    <title>Estudio Jurídico | Abogadas Especialistas</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/png" href="/favicon.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO principal -->
+  <title>Estudio Jurídico Morales & Araya | Abogadas en Chile</title>
+  <meta name="description"
+    content="Estudio jurídico especializado en derecho de familia, laboral y civil. Abogadas Soledad Araya Molina y Macarena Morales Gómez. Escuchamos, orientamos, actuamos." />
+  <meta name="keywords"
+    content="abogadas, estudio jurídico, derecho de familia, derecho laboral, civil, divorcio, pensión de alimentos, escrituras públicas, arrendamiento, Chile" />
+  <meta name="robots" content="index, follow" />
+  <meta name="author" content="Estudio Jurídico Morales & Araya" />
+  <link rel="canonical" href="https://leyes-template.vercel.app" />
+
+  <!-- Open Graph (WhatsApp, Facebook, LinkedIn) -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Estudio Jurídico Morales & Araya | Abogadas en Chile" />
+  <meta property="og:description"
+    content="Especialistas en derecho de familia, laboral y civil. Escuchamos, orientamos, actuamos. Atención personalizada y confidencial." />
+  <meta property="og:url" content="https://leyes-template.vercel.app" />
+  <meta property="og:locale" content="es_CL" />
+  <meta property="og:image" content="https://leyes-template.vercel.app/og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Estudio Jurídico Morales & Araya — Abogadas en Chile" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Estudio Jurídico Morales & Araya" />
+  <meta name="twitter:description"
+    content="Especialistas en derecho de familia, laboral y civil. Escuchamos, orientamos, actuamos." />
+  <meta name="twitter:image" content="https://leyes-template.vercel.app/og-image.png" />
+
+  <!-- JSON-LD: LegalService (Google Rich Results) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LegalService",
+    "name": "Estudio Jurídico Morales & Araya",
+    "description": "Estudio jurídico especializado en derecho de familia, laboral y civil. Atención personalizada, confidencial y con enfoque humano.",
+    "url": "https://leyes-template.vercel.app",
+    "logo": "https://leyes-template.vercel.app/favicon.png",
+    "image": "https://leyes-template.vercel.app/og-image.png",
+    "telephone": "+56991234567",
+    "email": "contacto@estudiojuridico.cl",
+    "priceRange": "$$",
+    "currenciesAccepted": "CLP",
+    "paymentAccepted": "Transferencia, Efectivo",
+    "areaServed": {
+      "@type": "Country",
+      "name": "Chile"
+    },
+    "knowsLanguage": "es",
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+        "opens": "09:00",
+        "closes": "18:00"
+      }
+    ],
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Servicios Jurídicos",
+      "itemListElement": [
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Derecho de Familia" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Pensión de Alimentos" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Divorcios" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Derecho Laboral" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Despidos Injustificados" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Escrituras Públicas" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Arrendamiento" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Posesiones Efectivas" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Prescripción de Multas y TAG" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Cambio de Nombre y Apellido" } }
+      ]
+    },
+    "employee": [
+      {
+        "@type": "Person",
+        "name": "Soledad Araya Molina",
+        "jobTitle": "Abogada",
+        "knowsAbout": ["Derecho de Familia", "Derecho Civil"]
+      },
+      {
+        "@type": "Person",
+        "name": "Macarena Morales Gómez",
+        "jobTitle": "Abogada",
+        "knowsAbout": ["Derecho Laboral", "Derecho Civil"]
+      }
+    ]
+  }
+  </script>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=Inter:wght@300;400;500;600&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+  <div id="root"></div>
+  <script type="module" src="/src/main.jsx"></script>
+</body>
+
 </html>

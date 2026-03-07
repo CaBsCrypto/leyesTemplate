@@ -1,16 +1,41 @@
 import { useState } from 'react'
 import './Contact.css'
 
+// ─── CONFIGURACIÓN ───────────────────────────────────────────────────────────
+// 1. Creá una cuenta gratis en https://formspree.io
+// 2. Creá un nuevo formulario y copiá tu endpoint aquí:
+const FORMSPREE_ENDPOINT = 'https://formspree.io/f/REEMPLAZAR_CON_TU_ID'
+// ─────────────────────────────────────────────────────────────────────────────
+
 export default function Contact() {
     const [form, setForm] = useState({ nombre: '', email: '', telefono: '', asunto: '', mensaje: '' })
-    const [sent, setSent] = useState(false)
+    const [status, setStatus] = useState('idle') // idle | sending | success | error
 
     const handleChange = e => setForm({ ...form, [e.target.name]: e.target.value })
 
-    const handleSubmit = e => {
+    const handleSubmit = async e => {
         e.preventDefault()
-        // Aquí podrías integrar con EmailJS, Formspree, etc.
-        setSent(true)
+        setStatus('sending')
+        try {
+            const res = await fetch(FORMSPREE_ENDPOINT, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+                body: JSON.stringify({
+                    nombre: form.nombre,
+                    email: form.email,
+                    telefono: form.telefono || '(no indicado)',
+                    asunto: form.asunto || '(sin área seleccionada)',
+                    mensaje: form.mensaje,
+                }),
+            })
+            if (res.ok) {
+                setStatus('success')
+            } else {
+                setStatus('error')
+            }
+        } catch {
+            setStatus('error')
+        }
     }
 
     return (
@@ -18,7 +43,7 @@ export default function Contact() {
             <div className="contact__inner">
                 <div className="contact__header">
                     <p className="section-label">Hablemos</p>
-                    <h2 className="section-title">Primera consulta <span>gratuita</span></h2>
+                    <h2 className="section-title">Escuchamos, orientamos, <span>actuamos</span></h2>
                     <div className="divider" />
                     <p className="section-subtitle">
                         Cuéntanos tu situación y nos pondremos en contacto contigo a la brevedad.
@@ -74,7 +99,7 @@ export default function Contact() {
 
                     {/* Form */}
                     <div className="contact__form-wrapper">
-                        {sent ? (
+                        {status === 'success' ? (
                             <div className="contact__success glass-card">
                                 <span className="contact__success-icon">✅</span>
                                 <h3>¡Mensaje enviado!</h3>
@@ -136,8 +161,22 @@ export default function Contact() {
                                     />
                                 </div>
 
-                                <button type="submit" className="btn-primary contact__submit" id="contact-submit">
-                                    <span>📨</span> Enviar Consulta
+                                {status === 'error' && (
+                                    <p className="contact__error">
+                                        ⚠️ Hubo un error al enviar. Intenta nuevamente o contáctanos por WhatsApp.
+                                    </p>
+                                )}
+
+                                <button
+                                    type="submit"
+                                    className="btn-primary contact__submit"
+                                    id="contact-submit"
+                                    disabled={status === 'sending'}
+                                >
+                                    {status === 'sending'
+                                        ? <><span>⏳</span> Enviando...</>
+                                        : <><span>📨</span> Enviar Consulta</>
+                                    }
                                 </button>
                             </form>
                         )}

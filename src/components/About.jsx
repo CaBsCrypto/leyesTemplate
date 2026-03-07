@@ -2,15 +2,15 @@ import './About.css'
 
 const abogadas = [
     {
-        name: 'Macarena Morales Gómez',
-        initials: 'MM',
-        role: 'Abogada — Derecho de Familia & Civil',
-        bio: 'Especialista en derecho de familia con amplia experiencia en pensiones de alimentos, divorcios y posesiones efectivas. Comprometida con el bienestar de sus clientes y sus familias.',
-        specialties: ['Derecho de Familia', 'Pensión de Alimentos', 'Divorcios', 'Posesiones Efectivas'],
-    },
-    {
         name: 'Soledad Araya Molina',
         initials: 'SA',
+        role: 'Abogada — Derecho de Familia & Civil',
+        bio: 'Especialista en derecho de familia y civil con amplia experiencia en procesos de familia, arrendamientos y escrituras públicas. Comprometida con entregar soluciones claras y personalizadas a cada cliente.',
+        specialties: ['Derecho de Familia', 'Derecho Civil', 'Escrituras Públicas', 'Cambio de Nombre'],
+    },
+    {
+        name: 'Macarena Morales Gómez',
+        initials: 'MM',
         role: 'Abogada — Derecho Laboral & Civil',
         bio: 'Con vasta trayectoria en derechos laborales y materia civil. Asesora a trabajadores y empresas en despidos injustificados, contratos y regularizaciones, siempre con enfoque estratégico.',
         specialties: ['Derecho Laboral', 'Escrituras Públicas', 'Arrendamiento', 'Cambio de Nombre'],
