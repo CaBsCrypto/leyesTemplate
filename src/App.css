@@ -1,0 +1,8 @@
+/* App-level resets and overrides */
+#root {
+    min-height: 100vh;
+}
+
+main {
+    position: relative;
+}
