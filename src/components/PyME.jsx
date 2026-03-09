@@ -43,7 +43,7 @@ export default function PyME() {
                             <span className="pyme__card-icon">🏢</span>
                             <div>
                                 <strong>Consulta Empresarial</strong>
-                                <p>Primera reunión gratuita</p>
+                                <p>Atención directa con las abogadas</p>
                             </div>
                         </div>
                         <div className="pyme__card-body">

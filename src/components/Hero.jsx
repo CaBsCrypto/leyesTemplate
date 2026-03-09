@@ -66,7 +66,7 @@ export default function Hero() {
                         ✓ Asesoría Confidencial
                     </div>
                     <div className="hero__badge hero__badge--bottom">
-                        ✓ Primera Consulta Gratuita
+                        ✓ Atención Directa con las Abogadas
                     </div>
                 </div>
             </div>
