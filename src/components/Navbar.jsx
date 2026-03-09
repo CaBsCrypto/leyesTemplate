@@ -29,7 +29,7 @@ export default function Navbar() {
                 </nav>
 
                 <a href="#contacto" className="btn-primary navbar__cta" id="nav-cta">
-                    Consulta Gratis
+                    Agendar Consulta
                 </a>
             </div>
         </header>
