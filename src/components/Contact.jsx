@@ -4,7 +4,7 @@ import './Contact.css'
 // ─── CONFIGURACIÓN ───────────────────────────────────────────────────────────
 // 1. Creá una cuenta gratis en https://formspree.io
 // 2. Creá un nuevo formulario y copiá tu endpoint aquí:
-const FORMSPREE_ENDPOINT = 'https://formspree.io/f/REEMPLAZAR_CON_TU_ID'
+const FORMSPREE_ENDPOINT = 'https://formspree.io/f/meereozq'
 // ─────────────────────────────────────────────────────────────────────────────
 
 export default function Contact() {
@@ -77,7 +77,7 @@ export default function Contact() {
                                     <span className="contact__info-item-icon">📧</span>
                                     <div>
                                         <strong>Email</strong>
-                                        <span>contacto@estudiojuridico.cl</span>
+                                        <span>estudiomoralesaraya@gmail.com</span>
                                     </div>
                                 </div>
 

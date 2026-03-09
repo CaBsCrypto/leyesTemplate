@@ -1,0 +1,58 @@
+.privacy {
+    min-height: 100vh;
+    background: var(--clr-bg);
+    padding: 6rem 1.5rem 4rem;
+}
+
+.privacy__inner {
+    max-width: 760px;
+    margin: 0 auto;
+    color: var(--clr-text);
+}
+
+.privacy__inner h1 {
+    font-family: var(--font-serif);
+    font-size: clamp(2rem, 4vw, 2.8rem);
+    color: var(--clr-gold);
+    margin-bottom: 0.5rem;
+}
+
+.privacy__updated {
+    color: var(--clr-muted);
+    font-size: 0.9rem;
+    margin-bottom: 2.5rem;
+}
+
+.privacy__inner section {
+    margin-bottom: 2rem;
+    border-left: 3px solid var(--clr-gold);
+    padding-left: 1.25rem;
+}
+
+.privacy__inner h2 {
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: var(--clr-text);
+    margin-bottom: 0.5rem;
+}
+
+.privacy__inner p,
+.privacy__inner li {
+    color: var(--clr-muted);
+    line-height: 1.75;
+    font-size: 0.97rem;
+}
+
+.privacy__inner ul {
+    padding-left: 1.2rem;
+    margin-top: 0.5rem;
+}
+
+.privacy__inner a {
+    color: var(--clr-gold);
+    text-decoration: underline;
+}
+
+.privacy__back {
+    margin-top: 3rem;
+}

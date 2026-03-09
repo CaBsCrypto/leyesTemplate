@@ -29,6 +29,10 @@ export default function Footer() {
                     <p>© {year} Estudio Jurídico Morales & Araya. Todos los derechos reservados.</p>
                     <p className="footer__disclaimer">
                         La información en este sitio es de carácter informativo y no constituye asesoría legal.
+                        {' '}·{' '}
+                        <a href="/privacidad" style={{ color: 'inherit', textDecoration: 'underline' }}>
+                            Política de Privacidad
+                        </a>
                     </p>
                 </div>
             </div>

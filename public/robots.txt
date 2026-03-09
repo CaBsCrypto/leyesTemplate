@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://estudiomoralesaraya.vercel.app/sitemap.xml

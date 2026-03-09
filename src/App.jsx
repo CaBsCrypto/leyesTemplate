@@ -7,9 +7,22 @@ import Contact from './components/Contact.jsx'
 import FAQ from './components/FAQ.jsx'
 import Footer from './components/Footer.jsx'
 import WhatsAppButton from './components/WhatsAppButton.jsx'
+import Privacy from './components/Privacy.jsx'
 import './App.css'
 
+const isPrivacy = window.location.pathname === '/privacidad'
+
 export default function App() {
+    if (isPrivacy) {
+        return (
+            <>
+                <Navbar />
+                <Privacy />
+                <Footer />
+            </>
+        )
+    }
+
     return (
         <>
             <Navbar />
